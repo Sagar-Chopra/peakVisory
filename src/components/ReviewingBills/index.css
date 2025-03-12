@@ -1,0 +1,129 @@
+.billContainer{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin-top: 36px;
+    padding: 26px 21px 21px 21px;
+    margin-left: 105px;
+}
+
+.primaryButton{
+    border-radius: 8px;
+    padding: 11px 13px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: #603AE5;
+    color: #FFFFFF;
+}
+
+.tabContainer{
+    margin-bottom: 23px;
+}
+
+.tabButton{
+    outline: none;
+    border: none;
+}
+
+.billListing{
+    border-radius: 12px;
+    border: 1px solid #EEEEEE;
+}
+
+.billDiv{
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.billImg{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.billSection{
+    height: auto;
+    border: 1px dashed #ECECF2;
+    border-radius: 20px;
+    margin-top: 24px;
+    padding: 11px;
+}
+
+.bill{
+    background-color: #F6DEBA;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.billImage{
+    width: 100%;
+}
+
+
+/* profile Sidebar */
+
+.profileContainer{
+    width: 389px;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 22px 24px;
+    overflow: scroll;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.profileContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.quickBook{
+    padding: 16px;
+    border: 1px solid #ECECF2;
+    margin-bottom: 24px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.tab{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 0;
+    border-radius: 8px;
+}
+
+.inputField{
+    border: none;
+    border-bottom: 1px solid #ECECF2;
+    outline: none;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.greyButton{
+    padding: 14px 0;
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 24px;
+}
+
+.radio{
+    width: 20px;
+    height: 20px;
+    accent-color: #603AE5
+}
