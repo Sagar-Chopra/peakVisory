@@ -7,6 +7,13 @@
     align-items: center;
     padding: 15px 20px;
     position: fixed;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebarImage{

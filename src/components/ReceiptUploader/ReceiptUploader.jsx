@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Clipboard } from "lucide-react";
+import bill from "/images/bill.svg";
+import uploadIcon from "/images/uploadIcon.svg";
 import "./index.css";
 
 const ReceiptUploader = () => {
-    const [selectedTab, setSelectedTab] = useState("Receipts");
+  const [selectedTab, setSelectedTab] = useState("Receipts");
 
   const tabs = ["Bills", "Receipts", "Bank"];
 
@@ -13,7 +15,6 @@ const ReceiptUploader = () => {
   };
   return (
     <div className="container mt-5 p-4 border rounded shadow bg-white">
-      {/* Tab Navigation */}
       <div className="d-flex align-items-center justify-content-between mb-4">
         <button className={`btn text-decoration-none secondaryColor fs-14`}>
           EasyUpload
@@ -34,9 +35,7 @@ const ReceiptUploader = () => {
 
         <button className="btn text-secondary fs-4">✕</button>
       </div>
-
-      {/* Content Section */}
-      <div className="row g-4 mb-4">
+      <div className="d-flex gap-3 mb-4">
         <div className="col-md-6 border-bottom">
           <p className="secondaryColor small mb-1 fs-14">Document Owner</p>
           <p className="fw-bold fs-14">Accountant 01</p>
@@ -49,24 +48,22 @@ const ReceiptUploader = () => {
           </select>
         </div>
       </div>
-
-      {/* Upload Section */}
-      <div className="border border-dashed rounded p-5 text-center mb-4">
+      <div className="border border-dashed rounded p-5 text-center mb-4 d-flex align-items-center justify-content-center">
         <div className="mb-3">
-          <span className="text-muted display-6">📤</span>
+          <img src={uploadIcon} alt="upload" className="mr-12" />
         </div>
-        <p className="text-primary fw-medium mb-1">
-          Drag & Drop or Choose file to upload
-        </p>
-        <p className="text-muted small">JPG, PNG, PDF, CVS</p>
+        <div>
+          <p className="text-primary fw-medium mb-1">
+            Drag & Drop or Choose file to upload
+          </p>
+          <p className="text-muted small">JPG, PNG, PDF, CVS</p>
+        </div>
       </div>
       <div className="w-100 d-flex justify-content-center">
         <button className="btn btn-primary mb-4 addbutton fs-14">
           Add Receipt
         </button>
       </div>
-
-      {/* Email Section */}
       <div>
         <p className="small mb-3 secondaryColor fs-14">Send Over Email</p>
 

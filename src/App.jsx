@@ -7,8 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router";
 function App() {
   return (
     <>
-     {/* <ReceiptUploader /> */}
-     {/* <ReviewingBills /> */}
      <BrowserRouter>
       <Routes>
         <Route path="/" element={<ReviewingBills />} />

@@ -5,6 +5,7 @@ import billImage from "/images/billImage.svg";
 import Sidebar from "../SideBar/Sidebar";
 import Header from "../Header/Header";
 import Profile from "../Profile/Profile";
+import { NavLink } from "react-router";
 const ReviewingBills = () => {
   const [option, setOption] = useState("accounting");
   const [profileOpen, setProfileOpen] = useState(false);
@@ -47,9 +48,11 @@ const ReviewingBills = () => {
           {option === "accounting" ? (
             <div className="billContainer">
               <div className="w-100 d-flex justify-content-end">
-                <button className="primaryButton">
-                  Add to Expenses Report
-                </button>
+                <NavLink to="/receipt">
+                    <button className="primaryButton">
+                        Add to Expenses Report
+                    </button>
+                </NavLink>
               </div>
               <div className="row">
                 <div className="col-md-4">
@@ -59,7 +62,7 @@ const ReviewingBills = () => {
                         key={tab}
                         onClick={() => setSelectedTab(tab)}
                         className={`btn text-decoration-none fs-14 tabButton ${
-                          selectedTab === tab ? "blackColor" : "secondaryColor"
+                          selectedTab === tab ? "blackColor border border-blac" : "secondaryColor"
                         } mx-2`}
                       >
                         {tab}
@@ -71,7 +74,7 @@ const ReviewingBills = () => {
                       <div className="billDiv" key={index}>
                         <img src={bill} className="billImg" alt="bill" />
                         <div>
-                          <p className="mb-0">Bill 1</p>
+                          <p className={`mb-0 ${index === 0 ? "primaryColor" : ""}`}>Bill {index + 1}</p>
                           <p className="mb-0">Date: Nov 1, 2019</p>
                           <p className="mb-0">₤ 50.59</p>
                         </div>
